@@ -1,0 +1,90 @@
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  &-primary {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $primary-color;
+    &:hover {
+      color: $primary-color;
+      background-color: #f4f4f4;
+    }
+  }
+  &-light {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $light-color;
+    &:hover {
+      color: #f4f4f4;
+      background-color: $primary-color;
+    }
+  }
+  &-dark {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $dark-color;
+    &:hover {
+      color: $primary-color;
+      background-color: #333;
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background-color: $primary-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
